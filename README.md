@@ -13,6 +13,7 @@ Check out the most popular movies
 - [ ] Stop using TS any
 - [ ] Unnecessary renders/fetches
 - [ ] Loading Icon
+- [ ] Verify data - Why isn't Top Gun more popular? Some movies were released in different year?
 
 ## Available Scripts
 
