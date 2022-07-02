@@ -2,6 +2,10 @@
 
 Check out the most popular movies
 
+## ENV Variables
+
+- `REACT_APP_API_KEY`
+
 ## TODO List
 
 - [ ] Tests
@@ -14,6 +18,7 @@ Check out the most popular movies
 - [ ] Unnecessary renders/fetches
 - [ ] Loading Icon
 - [ ] Verify data - Why isn't Top Gun more popular? Some movies were released in different year?
+- [ ] Error handling
 
 ## Available Scripts
 

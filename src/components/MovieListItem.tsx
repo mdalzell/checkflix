@@ -7,7 +7,7 @@ type MovieListItemProps = {
 
 const MovieListItem = ({ index, movie }: MovieListItemProps) => 
     <li key={movie.id}>
-        <div>{`${index + 1}. ${movie.original_title}`}</div>
+        <h3>{`${index + 1}. ${movie.original_title}`}</h3>
         <MoviePoster path={movie.poster_path} />
     </li>
 

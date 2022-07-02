@@ -1,8 +1,21 @@
-.App {
-  text-align: center;
+body { 
+  color: #fff;
+  background-color: #272822;
+}
+
+h1 {
+  color: #66d9ef;
+}
+
+h2 {
+  color: #ffd866;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+.App {
+  text-align: center;
 }
