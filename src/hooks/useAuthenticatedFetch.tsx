@@ -16,16 +16,16 @@ const useAuthenticatedFetch = (urlPath: string, verb: string = "GET", params: Re
     const queryString = new URLSearchParams(queryParams).toString()
     const url = `${baseURL}${urlPath}?${queryString}`
 
-    const fetchRequest = async () => {
-        const response = await fetch(url)
-        const json = await response.json()
-        setData(json);
-        setIsLoading(false)
-    }
-
     useEffect(() => {
+        const fetchRequest = async () => {
+            const response = await fetch(url)
+            const json = await response.json()
+            setData(json);
+            setIsLoading(false)
+        }
+
         fetchRequest();
-    }, [])
+    }, [url])
 
     return { data, isLoading }
 }
