@@ -10,7 +10,7 @@ const useAuthenticatedFetch = (urlPath: string, verb: string = "GET", params: Re
     }
 
     const [isLoading, setIsLoading] = useState(true);
-    const [data, setData] = useState(null);
+    const [data, setData] = useState<any>(null);
 
     const queryParams: Record<string, string> = {...params, [apiKeyParam]: apiKey}
     const queryString = new URLSearchParams(queryParams).toString()

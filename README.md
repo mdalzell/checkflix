@@ -4,10 +4,15 @@ Check out the most popular movies
 
 ## TODO List
 
+- [ ] Tests
 - [ ] Prettier/linting
 - [ ] Design framework (MUI)
 - [ ] Styled components
 - [ ] Fetching library
+- [ ] Storybook
+- [ ] Stop using TS any
+- [ ] Unnecessary renders/fetches
+- [ ] Loading Icon
 
 ## Available Scripts
 

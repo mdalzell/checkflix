@@ -1,11 +1,14 @@
-import { useAuthenticatedFetch } from "../hooks/useAuthenticatedFetch";
+import MovieList from "../components/MovieList";
+import { useMostPopularMovies } from "../hooks/useMostPopularMovies";
 
 const MoviePage = () => {
-    const { data } = useAuthenticatedFetch("/search/movie", "GET", {query: "test", year: "2022"})
+    
+    const { movies } = useMostPopularMovies("2022");
 
-    console.log(data)
-
-    return <main>Hello there</main>
+    return <main>
+                <h2>Most Popular Movies of 2022</h2>
+                <MovieList movies={movies} />
+            </main>
 }
 
 export default MoviePage;
