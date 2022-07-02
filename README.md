@@ -2,6 +2,13 @@
 
 Check out the most popular movies
 
+## TODO List
+
+- [ ] Prettier/linting
+- [ ] Design framework (MUI)
+- [ ] Styled components
+- [ ] Fetching library
+
 ## Available Scripts
 
 In the project directory, you can run:
