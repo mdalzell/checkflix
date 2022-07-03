@@ -5,10 +5,16 @@ body {
 
 h1 {
   color: #66d9ef;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
 
 h2 {
   color: #ffd866;
+  font-family: Copperplate,Copperplate Gothic Light,fantasy; 
+}
+
+p {
+  font-family: Consolas,monaco,monospace; 
 }
 
 ul {
@@ -18,4 +24,13 @@ ul {
 
 .App {
   text-align: center;
+  padding: 0 20%;
+}
+
+.movieDetails {
+  display: flex;
+}
+
+.movieDetails section {
+  padding: 0 20px;
 }

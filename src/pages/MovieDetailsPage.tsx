@@ -5,16 +5,21 @@ import { useMovieDetails } from "../hooks/useMovieDetails";
 const MovieDetailsPage = () => {
     const { movieID = "" } = useParams();
     const { isLoading, movieDetails } = useMovieDetails(movieID);
-    
+
     return <main>
-                <h2>Movie Details</h2>
                 {!isLoading &&
-                    <div>
-                        <section>
-                            <MoviePoster movie={movieDetails} />
-                        </section>
-                        <section></section>
-                    </div>
+                    <main>
+                        <h2>{movieDetails.title}</h2>
+                        <div className="movieDetails">
+                            <section>
+                                <MoviePoster movie={movieDetails} />
+                            </section>
+                            <section>
+                                <p>{movieDetails.overview}</p>
+                                <p><strong>Runtime: </strong>{`${movieDetails.runtime} minutes`}</p>
+                            </section>
+                        </div>
+                    </main>
                 }
             </main>
 }
