@@ -14,8 +14,8 @@ function App() {
       <Suspense>
         <BrowserRouter>
           <Routes>
-              <Route path={`${routes.mostPopular}/*`} element={<MostPopularPage />} />
-              <Route path={`${routes.movieDetails}/*`} element={<MovieDetailsPage />} />
+              <Route path={`${routes.mostPopular}`} element={<MostPopularPage />} />
+              <Route path={`${routes.movieDetails}/:movieID`} element={<MovieDetailsPage />} />
           </Routes>
         </BrowserRouter>
       </Suspense>

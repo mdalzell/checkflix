@@ -20,7 +20,7 @@ const useAuthenticatedFetch = (urlPath: string, verb: string = "GET", params: Re
         const fetchRequest = async () => {
             const response = await fetch(url)
             const json = await response.json()
-            setData(json);
+            setData(json)
             setIsLoading(false)
         }
 
