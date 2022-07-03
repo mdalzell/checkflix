@@ -6,7 +6,7 @@ type MovieListPropTypes = {
 
 const MovieList = ({ movies }: MovieListPropTypes) => 
     <ul>
-        {movies.map((movie, index) => <MovieListItem index={index} movie={movie} />)}
+        {movies.map((movie, index) => <MovieListItem index={index} key={movie.id} movie={movie} />)}
     </ul>
 
 export default MovieList;

@@ -1,12 +1,24 @@
+import React, { Suspense } from 'react';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import MoviePage from './pages/MoviePage';
+import { routes } from './routes';
+
+const MostPopularPage = React.lazy(() => import('./pages/MostPopularPage'))
+const MovieDetailsPage = React.lazy(() => import('./pages/MovieDetailsPage'))
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <MoviePage />
+      <Suspense>
+        <BrowserRouter>
+          <Routes>
+              <Route path={`${routes.mostPopular}/*`} element={<MostPopularPage />} />
+              <Route path={`${routes.movieDetails}/*`} element={<MovieDetailsPage />} />
+          </Routes>
+        </BrowserRouter>
+      </Suspense>
     </div>
   );
 }

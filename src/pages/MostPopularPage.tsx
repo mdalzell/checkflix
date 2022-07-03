@@ -1,7 +1,7 @@
 import MovieList from "../components/MovieList";
 import { useMostPopularMovies } from "../hooks/useMostPopularMovies";
 
-const MoviePage = () => {
+const MostPopularPage = () => {
     
     const { movies } = useMostPopularMovies("2022");
 
@@ -11,4 +11,4 @@ const MoviePage = () => {
             </main>
 }
 
-export default MoviePage;
+export default MostPopularPage;
