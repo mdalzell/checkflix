@@ -22,6 +22,7 @@ Check out the most popular movies
 - [ ] Figure out web safe fonts
 - [ ] Sort order feature
 - [ ] Video feature/API
+- [ ] Make year dynamic
 
 ## Available Scripts
 

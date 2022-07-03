@@ -14,7 +14,8 @@ function App() {
         <BrowserRouter>
           <Header />
           <Routes>
-              <Route path={`${routes.mostPopular}`} element={<MostPopularPage />} />
+            <Route path={`${routes.mostPopular}`} element={<MostPopularPage />} />
+              <Route path={`${routes.mostPopular}/:year`} element={<MostPopularPage />} />
               <Route path={`${routes.movieDetails}/:movieID`} element={<MovieDetailsPage />} />
           </Routes>
         </BrowserRouter>
