@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import MoviePoster from "../components/MoviePoster";
+import RatingBadge from "../components/RatingBadge";
 import { useMovieDetails } from "../hooks/useMovieDetails";
 
 const MovieDetailsPage = () => {
@@ -17,6 +18,7 @@ const MovieDetailsPage = () => {
                             <section>
                                 <p>{movieDetails.overview}</p>
                                 <p><strong>Runtime: </strong>{`${movieDetails.runtime} minutes`}</p>
+                                <RatingBadge rating={movieDetails.vote_average} />
                             </section>
                         </div>
                     </main>

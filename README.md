@@ -19,6 +19,7 @@ Check out the most popular movies
 - [ ] Loading Icon
 - [ ] Verify data - Why isn't Top Gun more popular? Some movies were released in different year?
 - [ ] Error handling
+- [ ] Figure out web safe fonts
 
 ## Available Scripts
 

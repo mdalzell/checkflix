@@ -27,10 +27,31 @@ ul {
   padding: 0 20%;
 }
 
+.green {
+  background-color: green;
+}
+
 .movieDetails {
   display: flex;
 }
 
 .movieDetails section {
   padding: 0 20px;
+}
+
+.ratingBadge {
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+  color: black;
 }
