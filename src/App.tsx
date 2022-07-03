@@ -10,9 +10,9 @@ const MovieDetailsPage = React.lazy(() => import('./pages/MovieDetailsPage'))
 function App() {
   return (
     <div className="App">
-      <Header />
       <Suspense>
         <BrowserRouter>
+          <Header />
           <Routes>
               <Route path={`${routes.mostPopular}`} element={<MostPopularPage />} />
               <Route path={`${routes.movieDetails}/:movieID`} element={<MovieDetailsPage />} />

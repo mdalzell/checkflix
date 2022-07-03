@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import MoviePoster from "../components/MoviePoster";
 import RatingBadge from "../components/RatingBadge";
 import { useMovieDetails } from "../hooks/useMovieDetails";
@@ -21,6 +21,7 @@ const MovieDetailsPage = () => {
                                 <RatingBadge rating={movieDetails.vote_average} />
                             </section>
                         </div>
+                        <Link to="/">Return</Link>
                     </main>
                 }
             </main>

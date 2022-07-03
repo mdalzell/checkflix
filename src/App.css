@@ -1,3 +1,7 @@
+a {
+  color: #66d9ef;
+}
+
 body { 
   color: #fff;
   background-color: #272822;
@@ -33,6 +37,7 @@ ul {
 
 .movieDetails {
   display: flex;
+  padding-bottom: 30px;
 }
 
 .movieDetails section {
