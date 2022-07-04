@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const baseURL = "https://api.themoviedb.org/3";
 const apiKeyParam = "api_key";
 
-const useAuthenticatedFetch = (urlPath: string, verb: string = "GET", params: Record<string, string> = {}) => {
+const useAuthenticatedFetch = (urlPath: string, verb: string = "GET", params: Record<string, unknown> = {}) => {
     const apiKey = process.env.REACT_APP_API_KEY;
     if (!apiKey) {
         throw Error("No API key defined")

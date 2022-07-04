@@ -35,9 +35,9 @@ select {
   background-color: #272822;
   border: solid #f92672;
   color: #f92672;
-  font-size: 24px;
-  margin-left: 16px;
-  padding: 8px;
+  font-size: 2rem;
+  margin-left: 1rem;
+  padding: 0.5rem;
 }
 
 select > option {
@@ -51,7 +51,7 @@ ul {
 
 .App {
   text-align: center;
-  padding: 32px 20%;
+  padding: 2rem 20%;
 }
 
 .green {
@@ -60,19 +60,34 @@ ul {
 
 .movieDetails {
   display: flex;
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
 }
 
 .movieDetails section {
-  padding: 0 20px;
+  padding: 0 2rem;
+}
+
+.nicCageModeInput {
+  color: #f92672;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.nicCageModeInput input {
+  background-color: #272822;
+}
+
+.nicCageModeInput label {
+  margin-right: 1rem;
 }
 
 .ratingBadge {
-  border-radius: 10px;
+  border-radius: 2rem;
   display: inline-block;
-  font-size: 48px;
+  font-size: 4rem;
   font-weight: bold;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .red {
