@@ -14,7 +14,7 @@ Check out the most popular movies
 - [ ] Styled components
 - [ ] Fetching library
 - [ ] Storybook
-- [ ] Stop using TS any
+- [ ] No TS any
 - [ ] Unnecessary renders/fetches
 - [ ] Loading Icon
 - [ ] Verify data - Why isn't Top Gun more popular? Some movies were released in different year?
@@ -23,6 +23,8 @@ Check out the most popular movies
 - [ ] Sort order feature
 - [ ] Video feature/API
 - [ ] Make year dynamic
+- [ ] Responsive design
+- [ ] Better list view (carousel?)
 
 ## Available Scripts
 

@@ -1,13 +1,17 @@
 import { useNavigate } from "react-router-dom"
 import { routes } from "../routes";
 
-const YearDropdown = () => {
+type YearDropdownProps = {
+    selectedYear: string;
+}
+
+const YearDropdown = ({ selectedYear } : YearDropdownProps) => {
     const navigate = useNavigate();
     const onChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         navigate(`${routes.mostPopular}${event.target.value}`)
     }
 
-    return <select onChange={onChange}>
+    return <select onChange={onChange} value={selectedYear}>
                 <option value="2022">2022</option>
                 <option value="2021">2021</option>
                 <option value="2020">2020</option>

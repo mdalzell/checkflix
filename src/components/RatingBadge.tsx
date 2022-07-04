@@ -7,7 +7,7 @@ const getColor = (rating: number) => {
     if (rating < 5) {
         return "red"
     }
-    else if (rating < 8) {
+    else if (rating < 7) {
         return "yellow"
     }
 

@@ -1,12 +1,14 @@
 import { useParams } from "react-router-dom";
 import MovieList from "../components/MovieList";
+import YearDropdown from "../components/YearDropdown";
 import { useMostPopularMovies } from "../hooks/useMostPopularMovies";
 
 const MostPopularPage = () => {
     const { year = "2022" } = useParams()
     const { movies } = useMostPopularMovies(year);
 
-    return  <main>
+    return  <main> 
+                <YearDropdown selectedYear={year} />
                 <h2>Most Popular Movies of {year}</h2>
                 <MovieList movies={movies} />
             </main>
