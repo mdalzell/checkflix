@@ -15,7 +15,6 @@ body {
 h1 {
   color: #66d9ef;
   font-family: helvetica,sans-serif;
-  border: solid #66d9ef 0.1rem;
   padding: 1rem;
 }
 
@@ -42,6 +41,7 @@ select {
   background-color: #272822;
   border: solid #f92672;
   color: #f92672;
+  cursor: pointer;
   font-size: 2rem;
   padding: 0.5rem;
 }
@@ -77,9 +77,8 @@ ul {
 }
 
 .nicCageModeInput {
-  color: #f92672;
+  cursor: pointer;
   font-size: 1rem;
-  font-weight: bold;
   margin-top: 1rem;
 }
 
