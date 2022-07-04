@@ -1,6 +1,6 @@
 # CheckFlix
 
-Check out the most popular movies
+Check out the most popular movies. [Live Link](https://checkflix.mattdalzell.com/)
 
 ## ENV Variables
 
