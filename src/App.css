@@ -14,12 +14,14 @@ body {
 
 h1 {
   color: #66d9ef;
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-family: helvetica,sans-serif;
+  border: solid #66d9ef 0.1rem;
+  padding: 1rem;
 }
 
 h2 {
   color: #ffd866;
-  font-family: Copperplate, Copperplate Gothic Light, fantasy;
+  font-family: helvetica,sans-serif;
 }
 
 header {
@@ -87,6 +89,7 @@ ul {
 
 .nicCageModeInput label {
   margin-right: 1rem;
+  font-family: 'Brush Script MT',cursive;
 }
 
 .ratingBadge {

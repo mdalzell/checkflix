@@ -17,11 +17,11 @@ Check out the most popular movies
 - [ ] No TS any
 - [ ] Unnecessary renders/fetches
 - [ ] Loading Icon
-- [ ] Verify data - Why isn't Top Gun more popular? Some movies were released in different year?
+- [ ] Verify data - Why isn't Top Gun more popular?
 - [ ] Error handling
 - [ ] Figure out web safe fonts
 - [ ] Sort order feature
-- [ ] Video feature/API
+- [ ] Video feature - Integrate additional API endpoint
 - [ ] Make year dynamic
 - [x] Responsive design
 - [ ] Better list view (carousel?)

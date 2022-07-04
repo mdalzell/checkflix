@@ -6,8 +6,9 @@ const useMostPopularMovies = (year: string) => {
   const withCast = active ? [2963] : [];
   const { isLoading, data } = useAuthenticatedFetch("/discover/movie", "GET", {
     sort_by: "popularity.desc",
-    year,
+    "primary_release_year": year,
     with_cast: withCast,
+    "with_original_language": "en"
   });
 
   return { isLoading, movies: data?.results.slice(0, 10) ?? [] };
