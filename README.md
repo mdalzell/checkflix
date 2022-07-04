@@ -9,7 +9,7 @@ Check out the most popular movies
 ## TODO List
 
 - [ ] Tests
-- [ ] Prettier/linting
+- [x] Prettier/linting
 - [ ] Design framework (MUI)
 - [ ] Styled components
 - [ ] Fetching library

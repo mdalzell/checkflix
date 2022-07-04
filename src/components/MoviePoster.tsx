@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 
-const imageBaseURL = "https://image.tmdb.org/t/p/w300"
+const imageBaseURL = "https://image.tmdb.org/t/p/w300";
 
 type MoviePosterPropTypes = {
-    movie: any;
-}
+  movie: any;
+};
 
-const MoviePoster = ({ movie }: MoviePosterPropTypes) => 
-    <Link to={`/movie/${movie.id}`}>
-        <img src={`${imageBaseURL}/${movie.poster_path}`} alt={movie.title} />
-    </Link>
+const MoviePoster = ({ movie }: MoviePosterPropTypes) => (
+  <Link to={`/movie/${movie.id}`}>
+    <img src={`${imageBaseURL}/${movie.poster_path}`} alt={movie.title} />
+  </Link>
+);
 
-export default MoviePoster
+export default MoviePoster;

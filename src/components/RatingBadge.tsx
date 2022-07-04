@@ -1,26 +1,26 @@
 type RatingBadgeProps = {
-    rating: number
-}
-
+  rating: number;
+};
 
 const getColor = (rating: number) => {
-    if (rating < 5) {
-        return "red"
-    }
-    else if (rating < 7) {
-        return "yellow"
-    }
+  if (rating < 5) {
+    return "red";
+  } else if (rating < 7) {
+    return "yellow";
+  }
 
-    return "green"
-}
+  return "green";
+};
 
-const RatingBadge = ({ rating } : RatingBadgeProps) => {
-    const color = getColor(rating);
+const RatingBadge = ({ rating }: RatingBadgeProps) => {
+  const color = getColor(rating);
 
-    return  <>
-                <h3>Average Rating</h3>
-                <div className={`ratingBadge ${color}`}>{rating}</div>
-            </>
-}
+  return (
+    <>
+      <h3>Average Rating</h3>
+      <div className={`ratingBadge ${color}`}>{rating}</div>
+    </>
+  );
+};
 
 export default RatingBadge;
