@@ -84,7 +84,8 @@ ol {
 }
 
 .movieList li {
-  flex: 1 1 25%;
+  flex: 0 1 25%;
+  padding: 1rem;
 }
 
 
