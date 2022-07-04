@@ -27,6 +27,10 @@ header {
   justify-content: center;
 }
 
+img { 
+  max-width: 100%;
+}
+
 p {
   font-family: Consolas, monaco, monospace;
 }
@@ -60,10 +64,13 @@ ul {
 
 .movieDetails {
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   padding-bottom: 3rem;
 }
 
 .movieDetails section {
+  max-width: 50%;
   padding: 0 2rem;
 }
 

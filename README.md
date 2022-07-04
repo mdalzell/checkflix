@@ -23,7 +23,7 @@ Check out the most popular movies
 - [ ] Sort order feature
 - [ ] Video feature/API
 - [ ] Make year dynamic
-- [ ] Responsive design
+- [x] Responsive design
 - [ ] Better list view (carousel?)
 
 ## Available Scripts

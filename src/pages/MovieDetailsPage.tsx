@@ -17,12 +17,12 @@ const MovieDetailsPage = () => {
               <MoviePoster movie={movieDetails} />
             </section>
             <section>
+              <RatingBadge rating={movieDetails.vote_average} />
               <p>{movieDetails.overview}</p>
               <p>
                 <strong>Runtime: </strong>
                 {`${movieDetails.runtime} minutes`}
               </p>
-              <RatingBadge rating={movieDetails.vote_average} />
             </section>
           </div>
           <Link to="/">Return</Link>
