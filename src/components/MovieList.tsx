@@ -6,11 +6,11 @@ type MovieListPropTypes = {
 
 const MovieList = ({ movies }: MovieListPropTypes) => (
   <>
-    <ul>
+    <ol className="movieList">
       {movies.map((movie, index) => (
         <MovieListItem index={index} key={movie.id} movie={movie} />
       ))}
-    </ul>
+    </ol>
   </>
 );
 

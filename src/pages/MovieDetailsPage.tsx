@@ -10,7 +10,7 @@ const MovieDetailsPage = () => {
   return (
     <main>
       {!isLoading && (
-        <main>
+        <>
           <h2>{movieDetails.title}</h2>
           <div className="movieDetails">
             <section>
@@ -26,7 +26,7 @@ const MovieDetailsPage = () => {
             </section>
           </div>
           <Link to="/">Return</Link>
-        </main>
+        </>
       )}
     </main>
   );

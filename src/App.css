@@ -50,7 +50,7 @@ select > option {
   color: #f92672;
 }
 
-ul {
+ol {
   list-style-type: none;
   padding: 0;
 }
@@ -75,6 +75,18 @@ ul {
   max-width: 50%;
   padding: 0 2rem;
 }
+
+.movieList {
+  align-items: end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movieList li {
+  flex: 1 1 25%;
+}
+
 
 .nicCageModeInput {
   cursor: pointer;
@@ -106,4 +118,14 @@ ul {
 .yellow {
   background-color: yellow;
   color: black;
+}
+
+@media (max-width: 800px) {
+  .movieDetails section {
+    max-width: 100%;
+  }
+
+  .movieList li {
+    flex-basis: 100%;
+  }
 }
